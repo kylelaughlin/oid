@@ -1,0 +1,25 @@
+
+<table id="table">
+  <thead>
+    <th>Certifier Name</th>
+    <th>Operation Name</th>
+    <th>Certification Status</th>
+    <th>City</th>
+    <th>State/Providence</th>
+    <th>Country</th>
+    <th>Certified Products</th>
+  </thead>
+  <tbody>
+    <% @operations.each do |o| %>
+      <tr>
+        <td><%= o.certifier_name %></td>
+        <td><%= o.operation_name %></td>
+        <td><%= o.certification_status %></td>
+        <td><%= o.phsyical_city %></td>
+        <td><%= o.physical_state %></td>
+        <td><%= o.physical_country %></td>
+        <td><%=truncate("#{o.crops_products} #{o.livestock_products} #{o.wild_crops_products}#{o.handling_products}", length: 50) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
