@@ -3,7 +3,7 @@ class AddColumnsToOperations < ActiveRecord::Migration[5.0]
     add_column :operations, :certifier_name, :string
     add_column :operations, :certifier_website, :string
     add_column :operations, :certifier_email, :string
-    add_column :operations, :operation_id, :decimal
+    add_column :operations, :operation_id, :string
     add_column :operations, :operation_name, :string
     add_column :operations, :other_operation_names, :string
     add_column :operations, :client_id, :string

@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20160728151234) do
     t.string   "certifier_name"
     t.string   "certifier_website"
     t.string   "certifier_email"
-    t.decimal  "operation_id"
+    t.string   "operation_id"
     t.string   "operation_name"
     t.string   "other_operation_names"
     t.string   "client_id"
