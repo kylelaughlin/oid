@@ -15,5 +15,9 @@
 //= require turbolinks
 //= require_tree .
 $(document).on("turbolinks:load", function(e){
-    $('#table').DataTable();
+    $('#table').DataTable({
+      "processing": true,
+      "serverSide": true,
+      "ajax": "/operations"
+    });
 });
